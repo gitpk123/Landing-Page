@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+  
+  /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+  color: #333; // This line added later-1
+}
+
+p {
+  color: #666;// This line added later-1
+}
+
+/* Form styles */
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.hidden {
+  display: none;
+}
+
+
+
+  /* This code lines are added later*/
+  
+#successMessage {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #e6f4e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#submittedEmail {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#submittedEmail p {
+  font-weight: bold;
+}
+
+#submittedEmailValue {
+  color: green;
+}
+
+
+/* All the css codes below is added later- These codes are for the Menu Bar */
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+  
+  </style>
+  
+  
+</head>
+<body>
+  <header>
+  
+ 
+  <nav> 
+      <ul>
+        <li><a href="#about">About</a></li> 
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <h1>Welcome to Your Landing Page</h1>
+    <p>Get updates and special offers by providing your email address below:</p>
+  
+  
+  </header>
+  
+
+ <main>
+ 
+ 
+
+ 
+ <section id="about">
+      <h2>About</h2>
+      <p>Write a brief description about your company or yourself.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
+  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
+  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
+      
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      
+      
+      <p>Include a contact form or contact information here.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
+  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
+      
+      
+    </section>
+    
+     <form id="emailForm" action="javascript:void(0);" method="post">
+    <input type="email" name="email" id="emailInput" placeholder="Enter your email address" required>
+    <span id="emailError" class="error"></span>
+    <button type="submit">Submit</button>
+  </form>
+    
+ 
+ 
+ 
+  
+  <div id="successMessage" class="hidden">
+    <p>Thank you for subscribing!</p>
+  </div>
+  
+  <!-- Add this code snippet after the success message <div> -->
+<div id="submittedEmail" class="hidden">
+  <p>Submitted Email: <span id="submittedEmailValue"></span></p>
+</div>
+
+
+ 
+</main>
+
+
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+  
+  
+ <script>
+ 
+ 
+ document.getElementById('emailForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  var emailInput = document.getElementById('emailInput');
+  var emailError = document.getElementById('emailError');
+  var successMessage=document.getElementById('successMessage');
+  
+ 
+ var submittedEmailValue = document.getElementById('submittedEmailValue'); // This  code line added later
+  
+ 
+ var emailValue = emailInput.value.trim();
+
+  // Simple email validation regex
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailValue.match(emailRegex)) {
+    emailError.textContent = 'Please enter a valid email address';
+    emailInput.classList.add('error');
+    
+  } else {
+    emailError.textContent = '';
+    emailInput.classList.remove('error');
+    emailError.textContent = 'Email address is valid';
+emailError.style.color = 'green';
+
+successMessage.style.display = 'block';
+
+
+submittedEmailValue.textContent = emailValue;
+  document.getElementById('submittedEmail').classList.remove('hidden'); // Three code line added later
+
+
+  }
+});
+
+
+
+
+  // Smooth scrolling functionality.These code is added later.
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+ 
+
+
+ 
+ </script>
+</body>
+</html>  

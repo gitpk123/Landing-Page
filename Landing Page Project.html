@@ -7,92 +7,88 @@
   <link rel="stylesheet" href="styles.css">
   
   <style>
-  
-  /* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Header styles */
-header {
-  text-align: center;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+    /* Header styles */
+    header {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  
-  color: #333; // This line added later-1
-}
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
 
-p {
-  color: #666;// This line added later-1
-}
+    p {
+      color: #666;
+    }
 
-/* Form styles */
-form {
-  text-align: center;
-  margin-top: 20px;
-}
+    /* Form styles */
+    form {
+      text-align: center;
+      margin-top: 20px;
+    }
 
-input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 300px;
-  max-width: 100%;
-  margin-right: 10px;
-}
+    input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+      max-width: 100%;
+      margin-right: 10px;
+    }
 
-button[type="submit"] {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    /* Improved CTA button styles */
+    button[type="submit"] {
+      padding: 12px 30px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-.hidden {
-  display: none;
-}
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
 
+    /* Responsive layout for main content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-
-  /* This code lines are added later*/
-  
-#successMessage {
-  text-align: center;
-  margin-top: 20px;
-  background-color: #e6f4e6;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-#submittedEmail {
-  text-align: center;
-  margin-top: 20px;
-}
-
-#submittedEmail p {
-  font-weight: bold;
-}
-
-#submittedEmailValue {
-  color: green;
-}
+    .main-section {
+      text-align: center;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
 
-/* All the css codes below is added later- These codes are for the Menu Bar */
+.other-main-section {
+      text-align: center;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+
+   /* All the css codes below is added later- These codes are for the Menu Bar */
 
 nav {
   background-color: #333;
@@ -121,150 +117,425 @@ a:hover {
 
 
 
-  
+#successMessage {
+  display: none;
+}
+
+
+
+
+
+
+<style>
+  /* Styling for the "Back to Top" button */
+  #backToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
   </style>
-  
-  
 </head>
 <body>
-  <header>
   
- 
-  <nav> 
+    <!-- Menu Bar -->
+<header id="header">
+    <nav> 
       <ul>
         <li><a href="#about">About</a></li> 
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  
-    <h1>Welcome to Your Landing Page</h1>
+
+    <h1>Welcome to TechGuru Solutions.</h1>
     <p>Get updates and special offers by providing your email address below:</p>
-  
-  
-  </header>
-  
+</header>
 
- <main>
- 
- 
+  <main>
 
- 
- <section id="about">
-      <h2>About</h2>
-      <p>Write a brief description about your company or yourself.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
-  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
-    </section>
+    <div class="container">
+      <div class="main-section">
 
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Service 1</li>
-        <li>Service 2</li>
-        <li>Service 3</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
-  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
-      
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      
-      
-      <p>Include a contact form or contact information here.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id maximus risus. Vivamus interdum ultrices neque. Duis vitae scelerisque ipsum. Integer pulvinar justo a justo tincidunt tincidunt. Nulla facilisi. Sed in nisl quis lectus sollicitudin elementum vel non justo. Fusce aliquet metus at magna interdum sollicitudin.</p>
-  <p>Etiam et luctus elit, vitae tristique mi. Mauris venenatis quam sit amet tellus finibus facilisis. Nulla tristique elit eu tincidunt finibus. Nulla facilisi. Phasellus eget ipsum turpis. Vestibulum sit amet dapibus orci. Aenean laoreet cursus lorem, at gravida sapien vestibulum non. Nunc congue fringilla felis, vitae rutrum neque luctus ut.</p>
-      
-      
-    </section>
-    
-     <form id="emailForm" action="javascript:void(0);" method="post">
+        <form id="emailForm" action="javascript:void(0);" method="post">
     <input type="email" name="email" id="emailInput" placeholder="Enter your email address" required>
     <span id="emailError" class="error"></span>
-    <button type="submit">Submit</button>
+    <button type="submit">Subscribe</button>
   </form>
-    
- 
- 
- 
-  
-  <div id="successMessage" class="hidden">
-    <p>Thank you for subscribing!</p>
-  </div>
-  
-  <!-- Add this code snippet after the success message <div> -->
+
+      </div>
+
+<!-- Add this code snippet after the form for the email input in the header -->
+
+<div id="errorMessage" class="hidden">
+  <p>Please enter a valid email address.</p>
+</div>
+
+<div id="successMessage" class="hidden">
+  <p>Thank you for subscribing!</p>
+</div>
+
 <div id="submittedEmail" class="hidden">
   <p>Submitted Email: <span id="submittedEmailValue"></span></p>
 </div>
+<br><br>
 
 
- 
-</main>
+
+    
+<!-- Existing code for the About section -->
+
+<section id="about" style="background-color: #f9f9f9; padding: 20px;">
+
+  <h2 style="font-size: 28px; text-align: center;">About Us</h2>
+  <p><strong>TechGuru Solutions is a leading technology company specializing in providing innovative solutions for businesses and individuals. With a team of highly skilled and experienced professionals, we offer a wide range of services to meet our clients' needs.</strong></p>
+  <p><strong>At TechGuru Solutions, we believe in the power of technology to transform businesses and improve lives. Our mission is to empower our clients with cutting-edge technology solutions that drive growth, efficiency, and success.</strong></p>
+  
+</section>
+
+<br><br>
+
+<!-- Existing code for the Services section -->
+      
+<section id="services" style="background-color: #f0f0f0; padding: 20px;">
+  
+<h2 style="font-size: 28px; text-align: center;">Services</h2>
+  
+<ol style="display: flex; flex-wrap: wrap; justify-content: center; list-style-type: none; padding: 0;">
+    <li style="margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; max-width: 200px;"><strong>Web Development: Our expert web developers can create stunning and user-friendly websites that represent your brand and captivate your audience.</strong></li><br>
+    <li style="margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; max-width: 200px;"><strong>Mobile App Development: We build custom mobile applications for Android and iOS platforms, tailored to your specific requirements.</strong></li><br>
+    <li style="margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; max-width: 200px;"><strong>E-Commerce Solutions: With our e-commerce expertise, we can help you set up and optimize your online store for maximum sales and profitability.</strong></li><br>
+    <li style="margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; max-width: 200px;"><strong>Digital Marketing: Our digital marketing strategies will enhance your online presence, attract more customers, and boost your business's visibility.</strong></li><br>
+    <li style="margin: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; max-width: 200px;"><strong>IT Consulting: TechGuru Solutions provides professional IT consulting services to help businesses streamline their operations and achieve their technology goals.</strong></li>
+</ol>
+  
+</section>
+
+<br><br>
+
+<!-- Existing code for the contact section -->
+
+<section id="contact" style="background-color: #f9f9f9; padding: 20px;">
+
+  <h2 style="font-size: 28px; text-align: center;">Contact</h2>
+  <p>Get in touch with TechGuru Solutions today to discuss your technology needs and explore how we can help you stay ahead in the digital world.</p>
+  
+<ul style="list-style-type: none; padding-left: 0;">
+
+<li><strong>Address:</strong> 123 Tech Street, Techland, TX 12345</li><br>
+<li><strong>Email:</strong> info@techgurusolutions.com</li><br>
+<li><strong>Phone:</strong> (555) 123-4567</li>
+
+<ul>
+
+</section>
+
+
+
+<!-- Your main content here -->
+
+
+
+  <!-- Testimonials section -->
+    <section id="testimonials" style="background-color: #f0f0f0; padding: 20px;">
+      <h2 style="font-size: 28px; text-align: center;">Testimonials</h2>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div style="max-width: 400px; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+          <p>"TechGuru Solutions transformed our business with their exceptional web development services. Our new website looks stunning and has improved user engagement. Highly recommended!"</p>
+          <p style="text-align: right;"><em>- John Smith, CEO of ABC Company</em></p>
+        </div>
+        <div style="max-width: 400px; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+          <p>"The mobile app developed by TechGuru Solutions exceeded our expectations. It's user-friendly and has helped us reach a wider audience. Fantastic work!"</p>
+          <p style="text-align: right;"><em>- Jane Doe, Marketing Manager at XYZ Inc.</em></p>
+        </div>
+
+
+<div style="max-width: 400px; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+          <p>"I am extremely impressed with the e-commerce solution provided by TechGuru Solutions. Our online store is now more efficient, and sales have increased significantly. Thank you!"</p>
+          <p style="text-align: right;"><em>- Mike Johnson, Owner of TechMart</em></p>
+        </div>
+
+
+        <!-- Add more testimonials here -->
+      </div>
+    </section>
+    <!-- End of Testimonials section -->
+
+
+
+
+<!-- FAQ section -->
+    <section id="faq" style="background-color: #fff; padding: 20px;">
+      <h2 style="font-size: 28px; text-align: center;">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="border-top: 1px solid #ccc; padding: 20px;">
+          <h3 style="font-size: 20px;">Q: What payment methods do you accept?</h3>
+          <p>A: We accept various payment methods, including credit cards, PayPal, and bank transfers. You can choose the option that is most convenient for you.</p>
+        </div>
+
+        <div style="border-top: 1px solid #ccc; padding: 20px;">
+          <h3 style="font-size: 20px;">Q: Can I request a custom solution for my business?</h3>
+          <p>A: Absolutely! We specialize in providing customized technology solutions tailored to the unique needs of each client. Get in touch with our team to discuss your requirements.</p>
+        </div>
+
+        <div style="border-top: 1px solid #ccc; padding: 20px;">
+          <h3 style="font-size: 20px;">Q: How long does it take to develop a website?</h3>
+          <p>A: The time required to develop a website depends on its complexity and the features you need. We work efficiently to deliver high-quality websites within reasonable timeframes.</p>
+        </div>
+
+        <!-- Add more FAQs here -->
+      </div>
+    </section>
+    <!-- End of FAQ section -->
+
+
+
+
+<!-- Gallery section -->
+    <section id="gallery" style="background-color: #f9f9f9; padding: 20px;">
+      <h2 style="font-size: 28px; text-align: center;">Gallery</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <div style="margin: 10px;">
+          <img src="https://via.placeholder.com/300" alt="Image 1" style="width: 300px; height: 200px; object-fit: cover;">
+        </div>
+        <div style="margin: 10px;">
+          <img src="https://via.placeholder.com/300" alt="Image 2" style="width: 300px; height: 200px; object-fit: cover;">
+        </div>
+        <div style="margin: 10px;">
+          <img src="https://via.placeholder.com/300" alt="Image 3" style="width: 300px; height: 200px; object-fit: cover;">
+        </div>
+        <!-- Add more images or videos here -->
+      </div>
+    </section>
+    <!-- End of Gallery section -->
+
+
+
+
+
+
+<div  class="other-main-section">
+ <!-- Email Subscription Form (existing section) -->
+    <!-- Add a new form at the bottom with a different ID -->
+<form id="emailFormBottom" action="javascript:void(0);" method="post">
+  <input type="email" name="email" id="emailInputBottom" placeholder="Enter your email address" required>
+  <span id="emailErrorBottom" class="error"></span>
+  <button type="submit">Subscribe</button>
+</form>
+
+</div>
+
+
+<!-- Add this code snippet after the form for the email input at the bottom -->
+
+<div id="errorMessageBottom" class="hidden">
+  <p>Please enter a valid email address.</p>
+</div>
+
+<div id="successMessageBottom" class="hidden">
+  <p>Thank you for subscribing!</p>
+</div>
+      
+      <div id="submittedEmailBottom" class="hidden">
+  <p>Submitted Email: <span id="submittedEmailValueBottom"></span></p>
+</div>
+    
+
+
+
+    
+
+  
+
+
+
+
+
+  </main>
 
 
   <footer>
     <p>&copy; 2023 Your Company. All rights reserved.</p>
   </footer>
-  
-  
- <script>
- 
- 
- document.getElementById('emailForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission
-
-  var emailInput = document.getElementById('emailInput');
-  var emailError = document.getElementById('emailError');
-  var successMessage=document.getElementById('successMessage');
-  
- 
- var submittedEmailValue = document.getElementById('submittedEmailValue'); // This  code line added later
-  
- 
- var emailValue = emailInput.value.trim();
-
-  // Simple email validation regex
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!emailValue.match(emailRegex)) {
-    emailError.textContent = 'Please enter a valid email address';
-    emailInput.classList.add('error');
-    
-  } else {
-    emailError.textContent = '';
-    emailInput.classList.remove('error');
-    emailError.textContent = 'Email address is valid';
-emailError.style.color = 'green';
-
-successMessage.style.display = 'block';
-
-
-submittedEmailValue.textContent = emailValue;
-  document.getElementById('submittedEmail').classList.remove('hidden'); // Three code line added later
-
-
-  }
-});
 
 
 
 
-  // Smooth scrolling functionality.These code is added later.
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+<!-- Add this code snippet at the bottom of your HTML, just before the closing </body> tag -->
+<div id="backToTopBtn">
+  <a href="#header">Back to Top</a>
+</div>
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+
+
+
+
+<!-- ... (existing HTML code) ... -->
+
+<script>
+
+ document.addEventListener('DOMContentLoaded', function() {
+    // Place the smooth scrolling code here
+    // ...
+  });
+
+// Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      const headerOffset = 100; // Adjust this value to offset the header height
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
+
+
     });
- 
+  });
 
 
- 
- </script>
+
+
+
+
+  // Show the "Back to Top" button when the user scrolls down the page
+  window.addEventListener('scroll', function() {
+    var backToTopBtn = document.getElementById('backToTopBtn');
+    if (window.pageYOffset > 300) { // Adjust the number (300) as needed to control when the button appears
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to the top of the page when the button is clicked
+  document.getElementById('backToTopBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+    var header = document.getElementById('header');
+    header.scrollIntoView({ behavior: 'smooth' });
+  });
+
+
+
+
+
+
+
+
+
+  function showSuccessMessageTop(emailValue) {
+    var successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
+
+    var submittedEmailValue = document.getElementById('submittedEmailValue');
+    submittedEmailValue.textContent = 'Submitted Email: ' + emailValue;
+    document.getElementById('submittedEmail').classList.remove('hidden');
+  }
+
+  function showSuccessMessageBottom(emailValue) {
+    var successMessageBottom = document.getElementById('successMessageBottom');
+    successMessageBottom.style.display = 'block';
+
+    var submittedEmailValueBottom = document.getElementById('submittedEmailValueBottom');
+    submittedEmailValueBottom.textContent = 'Submitted Email: ' + emailValue;
+    document.getElementById('submittedEmailBottom').classList.remove('hidden');
+  }
+
+  document.getElementById('emailForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    var emailInput = document.getElementById('emailInput');
+    var emailError = document.getElementById('emailError');
+    var emailValue = emailInput.value.trim();
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailValue.match(emailRegex)) {
+      emailError.textContent = 'Please enter a valid email address';
+      emailInput.classList.add('error');
+
+      // Hide the success message when the email is invalid
+      var successMessage = document.getElementById('successMessage');
+      successMessage.style.display = 'none';
+      var submittedEmailValue = document.getElementById('submittedEmailValue');
+      submittedEmailValue.textContent = '';
+      document.getElementById('submittedEmail').classList.add('hidden');
+    } else {
+      emailError.textContent = '';
+      emailInput.classList.remove('error');
+
+      emailError.textContent = 'Email address is valid';
+      emailError.style.color = 'green';
+
+      // Show the success message and display the submitted email address
+      showSuccessMessageTop(emailValue);
+    }
+
+    // Clear the input field after submission
+    emailInput.value = '';
+  });
+
+  document.getElementById('emailFormBottom').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    var emailInputBottom = document.getElementById('emailInputBottom');
+    var emailErrorBottom = document.getElementById('emailErrorBottom');
+    var emailValueBottom = emailInputBottom.value.trim();
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailValueBottom.match(emailRegex)) {
+      emailErrorBottom.textContent = 'Please enter a valid email address';
+      emailInputBottom.classList.add('error');
+
+      // Hide the success message when the email is invalid
+      var successMessageBottom = document.getElementById('successMessageBottom');
+      successMessageBottom.style.display = 'none';
+      var submittedEmailValueBottom = document.getElementById('submittedEmailValueBottom');
+      submittedEmailValueBottom.textContent = '';
+      document.getElementById('submittedEmailBottom').classList.add('hidden');
+    } else {
+      emailErrorBottom.textContent = '';
+      emailInputBottom.classList.remove('error');
+
+      emailErrorBottom.textContent = 'Email address is valid';
+      emailErrorBottom.style.color = 'green';
+
+      // Show the success message and display the submitted email address
+      showSuccessMessageBottom(emailValueBottom);
+    }
+
+    // Clear the input field after submission
+    emailInputBottom.value = '';
+  });
+
+  document.getElementById('submittedEmailValue').textContent = ''; // Initialize the submitted email value as empty
+  document.getElementById('submittedEmailValueBottom').textContent = ''; // Initialize the submitted email value for the bottom form as empty
+
+  
+
+
+
+
+
+
+
+
+</script>
+
+
+
 </body>
-</html>  
+</html>
